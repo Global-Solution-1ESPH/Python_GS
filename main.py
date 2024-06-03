@@ -61,8 +61,8 @@ def MenuGerenciamento():
 def addCriadouro():
     nome_peixe = input("\n\nDigite o nome da espécie: ")
     qntd = int(input("Digite a quantidade de alevinos: "))
-    mes_inicio = int(input("Digite o mes de inicio: "))
-    ano = int(input("Digite o ano de início: "))
+    mes_inicio = int(input("Digite o mes de inicio (1 a 12): "))
+    ano = int(input("Digite o ano de início (ex. 2024): "))
 
     criadouro ={
         "Espécie" : nome_peixe,
@@ -74,7 +74,7 @@ def addCriadouro():
 
 
 def addAlim():
-    qntd = float (input("\n\nDigite a quantidade em KG: "))
+    qntd = float (input("\n\nDigite a quantidade em Kg: "))
     criad = input("Para qual criadouro?: ")
     hora = int(input("Qual a hora? (00 às 23) :"))
 
