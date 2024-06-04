@@ -67,7 +67,8 @@ def addCriadouro():
     criadouro ={
         "Espécie" : nome_peixe,
         "Quantidade" : qntd,
-        "Data de início" : f"{mes_inicio}/{ano}"
+        "Data de início" : f"{mes_inicio}/{ano}",
+        "Alimentação" : []
     }
     fazenda.append(criadouro)
 
@@ -82,9 +83,17 @@ def addAlim():
         "Quantidade" : qntd,
         "Criadouro" : criad,
         "Hora" : hora
+        
     }
+    addAlimtoCriad(criad,alim)
     return alim
 
+def addAlimtoCriad(criad, alim):
+    for criadouro in fazenda:
+        if criadouro["Espécie"] == criad:
+            criadouro["Alimentação"].append(alim)
+            break
+    
 
 
 
