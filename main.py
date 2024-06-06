@@ -1,6 +1,7 @@
-
+#lista que armazena os criadouros
 fazenda = []
 
+#função para exibir menu principal
 def menuPrincipal():
     print("\n\nOlá, Seja Bem-vindo(a) ao Fish Manager!")
     print("Escolha a opção que mais faz sentido para você!")
@@ -10,6 +11,7 @@ def menuPrincipal():
     op = int(input("Digite a opção: "))
     return op
 
+#função para exibir menu de dicas
 def menuDicas():
     while True:
         print("\n\n1- Qual espécies recomendamos para iniciar")
@@ -33,7 +35,7 @@ def menuDicas():
                
                 
 
-
+# função para exibir o menu de gerenciamneto 
 def MenuGerenciamento():
     while True:
         print("\n\n1- Adicionar um novo criadouro.")
@@ -57,23 +59,23 @@ def MenuGerenciamento():
                 print(alim)
     
 
-
+#função que adiciona um novo criadouro a fazenda
 def addCriadouro():
     nome_peixe = input("\n\nDigite o nome da espécie: ").lower()
     qntd = int(input("Digite a quantidade de alevinos: "))
     mes_inicio = int(input("Digite o mes de inicio (1 a 12): "))
     ano = int(input("Digite o ano de início (ex. 2024): "))
 
-    criadouro ={
+    criadouro ={              #Dicionário para armazenar variáveis de diferentes tipos
         "Espécie" : nome_peixe,
         "Quantidade" : qntd,
         "Data de início" : f"{mes_inicio}/{ano}",
         "Alimentação" : []
     }
-    fazenda.append(criadouro)
+    fazenda.append(criadouro)   #utiliza a função append para adicionar
 
 
-
+#função que registra a alimentação de cada criadouro
 def addAlim():
     qntd = float (input("\n\nDigite a quantidade em Kg: "))
     criad = input("Para qual criadouro?: ").lower()
@@ -96,7 +98,7 @@ def addAlimtoCriad(criad, alim):
     
 
 
-
+#parte principal do codigo
 while True:
     op1 = menuPrincipal()
     if op1 == 0:
