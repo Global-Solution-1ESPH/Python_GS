@@ -24,3 +24,6 @@ O sistema inclui recursos para gestão de espécies, controle de alimentação e
 - [Giulia Barbizan](https://github.com/Giulia-Rocha) RM: **558084**
 - [Gustavo Viega](https://github.com/Vieg4) RM: **555885**
 - [Felipe Marques](https://github.com/FelipeMarquesdeOliveira) RM: **556319**
+
+## Links Úteis
+[Vídeo Explicativo](https://drive.google.com/file/d/1YekPqTbM6mlVhJEfXXPXPy2me5yxbrIh/view?usp=sharing)
